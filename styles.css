@@ -1,10 +1,66 @@
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-p {line-height: 2}
-.bgimg, .bgimg2 {
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sometype+Mono:ital@0;1&display=swap');
+
+* {
+    font-family: 'Sometype Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
-.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
-.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+
+#home{
+    margin: 0;
+}
+#home .video{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#home .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home .intro .titulo{
+    font-size: 2rem;
+}
+#home .intro .subtitulo{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.6rem;
+}
+#home .intro .date{
+    font-size: 1rem;
+}
+
+#us{
+    background-color: bisque;
+}
+
+#us .invitacion{
+    padding: 5rem;
+}
+
+#lugar{
+    position: relative;
+}
+
+#lugar h4{
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 0;
+}
+#lugar h2{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.6rem;
+    padding: 2rem;
+    padding-top: 0;
+    text-align: center;
+}
+.boton-agencia{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boton-agencia svg{
+    margin-right: 10px;
+}
