@@ -61,7 +61,17 @@
     bottom: 5rem;
     left: 50%;
     transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
 .boton-agencia svg{
     margin-right: 10px;
 }
+@media only screen and (max-width: 600px) {
+    .boton-agencia{
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        max-width: 100%;
+    }
+  }
