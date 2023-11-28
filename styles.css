@@ -1,35 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sometype+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,400;1,400&display=swap');
 
 * {
-    font-family: 'Sometype Mono', monospace;
+    /*font-family: 'Sometype Mono', monospace;*/
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
-
+body h1, body h2{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+.row>*, .container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 #home{
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 #home .video{
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
+    height: 0;
+    padding-top: 125%;
+    background-image: url("./assets/video\ web.gif");
+    background-repeat: no-repeat;
+    background-size: 660px 825px;
+    background-attachment: fixed;
 }
+@media only screen and (max-width: 764px) {
+    #home .video{
+        background-size: contain;
+    }
+}
+
 
 #home .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 2rem;
 }
 
 #home .intro .titulo{
     font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 #home .intro .subtitulo{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2.6rem;
+    font-size: 3rem;
 }
 #home .intro .date{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #us{
@@ -50,7 +76,6 @@
     padding-bottom: 0;
 }
 #lugar h2{
-    font-family: 'Permanent Marker', cursive;
     font-size: 2.6rem;
     padding: 2rem;
     padding-top: 0;
@@ -75,3 +100,18 @@
         max-width: 100%;
     }
   }
+
+.big-heart{
+    transform: scale(1.5);
+}
+
+.octomono-section-divider-e9f74b2f-462d-42ef-b5e4-36af0c10df07 {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    opacity: 0;
+    fill: rgba(255,255,255,1);
+}
