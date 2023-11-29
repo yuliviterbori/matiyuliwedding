@@ -9,63 +9,89 @@
 <link rel="stylesheet" href="styles.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script>
-  var flag = true
-  setInterval(function() {
-    flag = !flag;
-    if(flag){
-    document.getElementById("heart").classList.add("big-heart");
-    }else{
-      document.getElementById("heart").classList.remove("big-heart");
-    }
-  }, 300);
-</script>
+
+
 </head>
 <body>
   <div class="container">
-    <!-- Header / Home-->
-    <header id="home">
-        <div class="col-12 col-md-6">
-          <div class="video"></div>
+    <div class="row" id="intro">
+      <div class="col-md-6 intro-img">
+        <img src="./assets/video web.gif" />
+      </div>
+      <div class="col-md-6 intro-info">
+        <div><h3>¡NOS CASAMOS!</h3></div>
+        <div><img class="matiyuli" src="./assets/mati yuli.png" alt="Maty and Yuli" /></div>
+        <div>
+          <h3>Barceló maya GRAND RESORT</h3>
+          <h4>20 al 25 de octubre 2024</h4>
         </div>
-        <div class="col-12 col-md-6 intro">
-          <div style="position: sticky; top: 0;">
-            <h3 class="titulo">¡Nos Casamos!</h3>
-            <h1 class="subtitulo">Mati 
-              <svg id="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
-              </svg>
-              Yuli</h1>
-            <h3 class="date">20 al 25 de octubre 2024</h3>
-          </div>
-        </div>
-    </header>
-
-    <!-- About us -->
-    <div id="us">
-      <div class="invitacion">
-        <hr class="col-3 col-md-2 mb-5">
-        <h4>Estuviste desde el inicio... </h4>
-        <p><i>...y queremos compartir contigo ese día tan importante</i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-        </svg>
-        </p><br>
       </div>
     </div>
 
-    <!-- Wedding information -->
-    <div id="lugar">
-      <h4>Acompañanos a este increíble viaje </h4>
-      <h2>Rivera Maya, México</h2>
-      <img src="/assets/hotel .gif" width="100%"/>
-      <a class="btn btn-outline-dark d-inline-flex align-items-center boton-agencia" href="./CMP.pdf" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-        </svg> Detalles del viaje
-      </a>
+    <div class="row" id="count">
+      <h3>Faltan</h3>
+      <div class="row">
+        <div class="col-6 col-md-3 date">
+          <div class="number"><span id="days"></span></div>
+          <div class="description">Días</div>
+        </div>
+        <div class="col-6 col-md-3 date">
+          <div class="number"><span id="hours"></span></div>
+          <div class="description">Horas</div>
+        </div>
+        <div class="col-6 col-md-3 date">
+          <div class="number"><span id="minutes"></span></div>
+          <div class="description">Minutos</div>
+        </div>
+        <div class="col-6 col-md-3 date">
+          <div class="number"><span id="seconds"></span></div>
+          <div class="description">Segundos</div>
+        </div>
+      </div>
     </div>
+
+    <div class="row" id="lugar">
+      <h3>QUEREMOS COMPARTIR CONTIGO ESTE DÍA TAN IMPORTANTE</h3>
+      <h4>EN UN VIAJE INOLVIDABLE</h4>
+      <h2>Riviera Maya, México</h2>
+      <img class="hotel-video" src="./assets/hotel .gif" />
+    </div>
+
+    <div class="row" id="hotel">
+      <div class="col-md-6 content">
+        <h3>Hotel Barceló Maya Caribe</h3>
+        <h4>PAQUETE INCLUYE</h4>
+        <ul>
+          <li>Vuelos ida y vuelta desde Asunción con equipaje de hasta 23kg</li>
+          <li>5 noches de alojamiento. Régimen todo incluido (<b>comida y bebidas ilimitadas</b>)</li>
+          <li>Traslados del aeropuerto al hotel y viceversa</li>
+          <li>Tasas e impuestos aeroportuarios</li>
+        </ul>
+        <div class="precios">
+          <h4>PRECIO POR PERSONA</h4>
+          <h5>Habitación Superior DOBLE <b>(USD. 1540)</b></h5>
+          <h5>Habitación Superior TRIPLE <b>(USD. 1540)</b></h5>
+          <h5>Niños de 2 a 11 años <b>(USD. 1280)</b></h5>
+          <h6>Seña USD. 100 por persona (hasta el 29 de dic 2023). Cancelación hasta 45 días antes del viaje</h6>
+          
+        </div>
+
+      </div>
+      <div class="col-md-6 images">
+        <img class="one" src="/assets/hotel 1.png">
+        <img class="two" src="/assets/hotel 2.png">
+        <img class="three" src="/assets/hotel 3.png">
+      </div>
+    </div>
+
+    <div class="row" id="footer">
+      <h3>Confirmar Asistencia</h3>
+      <h4>+595 981 253 086</h4>
+      <h4>AVDA. Artigas 4143</h4>
+      <img class="logo" src="./assets/cmp logo.png" width="20" />
+    </div>
+
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
