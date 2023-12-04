@@ -210,11 +210,52 @@ body h1, body h2{
 #hotel .content .precios h6{
     font-style: italic;
 }
+#hotel .content .botones{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+#hotel .content .botones .contactar{
+    background-color: #c5d6d8;
+    border-color: black;
+    color: black;
+    padding: 1rem;
+}
+#hotel .content .botones .info{
+    border-color: black;
+    color: black;
+    padding: 1rem;
+}
+#hotel .content .botones .info:hover{
+    background-color: #c5d6d8;
+    color: black;
+}
+#hotel .content .botones .info svg, #hotel .content .botones .contactar svg{
+    margin-right: 10px;
+}
+@media only screen and (max-width: 600px){
+    #hotel .content .botones{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #hotel .content .botones .info{
+        margin-top: 1rem;
+    }
+}
 
 #footer{
     background-color: #cac3bb;
     padding: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 #footer .logo{
     width: 250px !important;
+}
+
+@media only screen and (max-width: 600px){
+    #footer{
+        text-align: center;
+    }
 }
