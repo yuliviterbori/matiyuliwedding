@@ -157,10 +157,6 @@ body h1, body h2{
         margin-top: 0.5rem;
         margin-bottom: 1rem;
     }
-    #lugar .hotel-video{
-        width: 100%;
-        padding: 0;
-    }
   }
 
 #hotel{
@@ -188,6 +184,9 @@ body h1, body h2{
 #hotel .content{
     padding: 3rem !important;
     text-align: center;
+}
+#hotel .content p{
+    text-align: justify;
 }
 #hotel .content h3{
     font-family: 'Libre Baskerville', serif;
@@ -258,4 +257,12 @@ body h1, body h2{
     #footer{
         text-align: center;
     }
+}
+
+#complejo{
+
+}
+#complejo .hotel-video{
+    width: 100%;
+    padding: 0;
 }
